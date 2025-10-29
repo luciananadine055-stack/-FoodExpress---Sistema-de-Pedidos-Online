@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú - FoodExpress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🍕 FoodExpress - Menú</h1>
+
+  <section>
+    <h2>Hamburguesas</h2>
+    <ul>
+      <li>Clásica - $2500 <button onclick="agregarAlCarrito('Clásica', 2500)">Agregar</button></li>
+      <li>Cheddar Bacon - $2800 <button onclick="agregarAlCarrito('Cheddar Bacon', 2800)">Agregar</button></li>
+      <li>Veggie - $2600 <button onclick="agregarAlCarrito('Veggie', 2600)">Agregar</button></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pizzas</h2>
+    <ul>
+      <li>Muzzarella - $3000 <button onclick="agregarAlCarrito('Muzzarella', 3000)">Agregar</button></li>
+      <li>Napolitana - $3200 <button onclick="agregarAlCarrito('Napolitana', 3200)">Agregar</button></li>
+      <li>Fugazzeta - $3300 <button onclick="agregarAlCarrito('Fugazzeta', 3300)">Agregar</button></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Bebidas</h2>
+    <ul>
+      <li>Coca-Cola - $1200 <button onclick="agregarAlCarrito('Coca-Cola', 1200)">Agregar</button></li>
+      <li>Agua Mineral - $800 <button onclick="agregarAlCarrito('Agua Mineral', 800)">Agregar</button></li>
+      <li>Cerveza - $1500 <button onclick="agregarAlCarrito('Cerveza', 1500)">Agregar</button></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Postres</h2>
+    <ul>
+      <li>Helado de Vainilla - $2000 <button onclick="agregarAlCarrito('Helado de Vainilla', 2000)">Agregar</button></li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section id="carrito">
+    <h2>🛒 Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Subtotal:</strong> $<span id="subtotal">0</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
